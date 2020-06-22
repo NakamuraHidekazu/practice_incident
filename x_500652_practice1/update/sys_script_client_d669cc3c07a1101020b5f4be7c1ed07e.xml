@@ -14,8 +14,10 @@
    if (isLoading || newValue === '') {
       return;
    }
-
-   g_form.showFieldMsg("field_name", "Hello World", "error");
+   var getRole = new GlideAjax('getrole');
+   
+	getRole.addParam('sysparm','roleOk');
+	getRole.addParam('sysparm_userID',g_form.getValue(''));
 	
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -24,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d669cc3c07a1101020b5f4be7c1ed07e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>errormsg</sys_name>
         <sys_overrides/>
         <sys_package display_value="practice1" source="x_500652_practice1">292884f807a1101020b5f4be7c1ed045</sys_package>
@@ -32,10 +34,10 @@
         <sys_scope display_value="practice1">292884f807a1101020b5f4be7c1ed045</sys_scope>
         <sys_update_name>sys_script_client_d669cc3c07a1101020b5f4be7c1ed07e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-06-19 05:28:53</sys_updated_on>
+        <sys_updated_on>2020-06-22 00:27:19</sys_updated_on>
         <table>incident</table>
         <type>onChange</type>
-        <ui_type>0</ui_type>
+        <ui_type>10</ui_type>
         <view/>
     </sys_script_client>
 </record_update>
